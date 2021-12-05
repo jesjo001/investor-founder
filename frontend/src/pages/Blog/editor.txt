@@ -1,0 +1,242 @@
+// import { Upload, Modal, Button, Row, Col } from 'antd';
+// import { PlusOutlined, CaretDownOutlined } from '@ant-design/icons';
+// import { Popover, Alert, Skeleton } from 'antd';
+// import { LoadingOutlined } from '@ant-design/icons';
+// import { message } from 'antd';
+// import { Calendar } from 'antd';
+// import { Collapse } from 'antd';
+// import { Radio, Input, Space } from 'antd';
+// import ContentEditable from 'react-contenteditable';
+import axios from 'axios';
+import React from 'react';
+import { API_PATH } from '../../utils/constants';
+import './richtext.css';
+
+// const { Panel } = Collapse;
+
+function getBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+}
+
+// const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
+
+class PicturesWall extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      previewVisible: false,
+      previewImage: '',
+      previewTitle: '',
+      fileList: [],
+      uploading: false,
+      innerTxt: '',
+      value: 1,
+    };
+  }
+
+  //calender
+  onPanelChange(value, mode) {
+    console.log(value, mode);
+  }
+  //Comment
+  onCommentChange = (e) => {
+    console.log('radio checked', e.target.value);
+    this.setState({
+      value: e.target.value,
+    });
+  };
+
+  //Image
+  handleCancel = () =>
+    this.setState({ previewVisible: false, uploading: false });
+  handlePreview = async (file) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+
+    this.setState({
+      previewImage: file.url || file.preview,
+      previewVisible: true,
+      previewTitle:
+        file.name || file.url.substring(file.url.lastIndexOf('/') + 1),
+    });
+  };
+
+  handleChange = ({ fileList }) =>
+    this.setState({ fileList, uploading: false });
+
+  handleUpload = () => {
+    const { fileList, innerTxt } = this.state;
+
+    const formData = new FormData();
+    formData.set('txt', innerTxt);
+    fileList.forEach((file) => {
+      formData.append('files', file.originFileObj);
+    });
+
+    this.setState({
+      uploading: true,
+    });
+
+    axios
+      .post(`${API_PATH}/Feed/`, formData, {
+        headers: {
+          token: localStorage.token,
+          'Content-Type': 'multipart/form-data',
+        },
+      })
+      .then((res) => {
+        if (res.data) {
+          // message.success('feed uploaded successfully');
+          // this.setState({
+          //   fileList: [],
+          //   innerTxt: '',
+          //   uploading: false,
+          // });
+        } else if (res.error) {
+          // message.error(res.error);
+          // this.setState({
+          //   uploading: false,
+          // });
+        }
+      });
+  };
+
+  handleTxtChange = (evt) => {
+    this.setState({ innerTxt: evt.target.value, uploading: false });
+  };
+
+  render() {
+    const {
+      previewVisible,
+      previewImage,
+      fileList,
+      previewTitle,
+      uploading,
+      innerTxt,
+      value,
+    } = this.state;
+    const uploadButton = (
+      <div>
+        {/* <PlusOutlined /> */}
+        <div style={{ marginTop: 8 }}>Upload</div>
+      </div>
+    );
+
+    const props = {
+      onRemove: (file) => {
+        this.setState((state) => {
+          const index = state.fileList.indexOf(file);
+          const newFileList = state.fileList.slice();
+          newFileList.splice(index, 1);
+          return {
+            fileList: newFileList,
+          };
+        });
+        this.setState({ uploading: false });
+      },
+      beforeUpload: (file) => {
+        this.setState((state) => ({
+          fileList: [...state.fileList, file],
+        }));
+        return false;
+      },
+      fileList,
+    };
+
+    //   collapse for link type
+    const comments = (
+      <div style={{ paddingLeft: 24 }}>
+        <h6>Render Comments</h6>
+        {/* <Radio.Group onChange={this.onCommentChange} value={value}>
+          <Space direction="vertical">
+            <Radio value={1}>Allow comments for this post</Radio>
+            <Radio value={2}>Disable comments for this post</Radio>
+          </Space>
+        </Radio.Group> */}
+      </div>
+    );
+    return (
+      <div className="editor">
+        <section className="blog_editor">
+          <div className="">
+            <input
+              type="text"
+              placeholder="Title.."
+              className="blog_editor_title"
+            />
+          </div>
+          <div className="view">
+            <div className="">
+              {/* <Upload
+                {...props}
+                listType="picture-card"
+                fileList={fileList}
+                onPreview={this.handlePreview}
+                onChange={this.handleChange}
+                maxCount={8}
+                multiple
+              >
+                {fileList.length >= 8 ? null : uploadButton}
+              </Upload> */}
+            </div>
+          </div>
+          {/* <ContentEditable
+            html={innerTxt}
+            className="textarea_13l"
+            onChange={this.handleTxtChange}
+            placeholder="What's the latest today?...."
+          /> */}
+
+          {/* <Modal
+            visible={previewVisible}
+            title={previewTitle}
+            footer={null}
+            onCancel={this.handleCancel}
+          >
+            <img alt="example" style={{ width: '100%' }} src={previewImage} />
+          </Modal> */}
+        </section>
+
+        <section className="muonclub_blog_setting">
+          <div className="mb3 dflex">
+            <h5>Post settings</h5>
+            {/* <Button
+              className="pa2 publish_button"
+              type="danger"
+              onClick={this.handleUpload}
+              loading={uploading}
+              style={{ marginTop: 4, marginLeft: 10 }}
+            >
+              publish
+            </Button> */}
+          </div>
+
+          <div className="muon_blog_side_menu">
+            {/* Scheduling */}
+            <h6>Published on</h6>
+            <div className="site-calendar-demo-card">
+              {/* <Calendar fullscreen={false} onPanelChange={this.onPanelChange} /> */}
+            </div>
+
+            {/* Options */}
+            <div>
+              {/* <Collapse bordered={false}>
+                link type
+                <Panel header="Options" key="2">
+                  {comments}
+                </Panel>
+              </Collapse> */}
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+}
+export default PicturesWall;

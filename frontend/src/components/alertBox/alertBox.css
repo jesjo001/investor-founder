@@ -1,0 +1,56 @@
+
+
+.muon-alert-wrap{
+    position: fixed;
+    z-index: 10;
+    top: 90px;
+    max-width: 320px;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 8px;
+    border: 1px solid #5B86E5;
+    background-color: white;
+}
+
+.alert-on{
+    right: 10px;
+    transition: 0.4s all;
+}
+
+.alert-off{
+    right: -320px;
+    transition: 0.4s all;
+}
+
+.muon-alert{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+     border-radius: 8px;
+    padding: 10px 18px;
+}
+
+.muon-alert h4{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.muon-alert p{
+    font-size: 14px;
+}
+
+.alert-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 12px;
+    width: 12px;
+}
+
+.success-alert{
+    color: green;
+}
+
+.error-alert{
+    color: red;
+}

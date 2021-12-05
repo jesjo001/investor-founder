@@ -1,0 +1,21 @@
+.muon-error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+
+.muon-error p {
+  color: rgb(163, 161, 161);
+  font-size: 24px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.muon-error span {
+  display: block;
+  color: rgb(163, 161, 161);
+  text-align: center;
+}

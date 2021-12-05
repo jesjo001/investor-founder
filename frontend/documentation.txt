@@ -1,0 +1,10 @@
+//Emiting for invite = when emiting to invite a user get the user id(the logged in user), the receiver id(the user
+ur inviting), the event id
+ = socket.emit('EVENT_INVITATION',localStorage.getItem("id"),receiver,eventID)
+
+ //Emiting for profile lookUp or view
+ when the user view clicks and get to the other user profile get the reciver ID and the user logged in ID cause that will
+ be the sender
+  = socket.emit('PROFILE_NOTIFICATION',localStorage.getItem("id"),receiver)
+
+same goes for the rest of anything ur emiting for.check the socket for what you should emit and pass the parameters.

@@ -1,0 +1,39 @@
+.muon-register-bg {
+  background: url("../../assets/images/registerGirl.svg"),
+    linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  background-position: bottom;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.muon-register-terms {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #39363d;
+  text-align: center;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.muon-register-terms a{
+    text-decoration: underline !important;
+    font-size: 14px;
+    line-height: 150%;
+    color: #39363d;
+}
+
+@media (max-width: 950px) {
+  .muon-register-br {
+    display: none;
+  }
+
+  .muon-register-bg {
+    background: url("../../assets/images/registerGirlSm.svg"),
+      linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}

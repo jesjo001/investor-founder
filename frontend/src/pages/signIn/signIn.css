@@ -1,0 +1,53 @@
+.muon-auth h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #39363d;
+  margin-bottom: 16px;
+}
+
+.muon-auth p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #39363d;
+}
+
+.auth-space {
+  height: calc(686px + 120px) !important;
+}
+
+.muon-forgot-action {
+  color: #5b86e5 !important;
+  cursor: pointer;
+}
+
+@media (max-width: 973px) {
+  .muon-auth h2 {
+    font-size: 30px;
+  }
+
+  .muon-auth p {
+    font-size: 14px;
+  }
+
+  .muon-switch-auth {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .auth-space {
+    height: 150vh !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .auth-space {
+    height: 121vh !important;
+  }
+}

@@ -1,0 +1,90 @@
+.muon-faq-title {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 8px 8px 0px 0px;
+  padding: 17px 48px;
+  cursor: pointer;
+}
+
+.muon-faq-title p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39px;
+  color: #3f4b52;
+  margin: 0;
+}
+
+.muon-faq-desc {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 8px 8px;
+  padding: 17px 48px;
+}
+
+.muon-faq-desc p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39px;
+  color: #3f4b52;
+  margin: 0;
+}
+
+.muon-faq-section {
+  max-width: 824px;
+  width: 100%;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.muon-faq {
+  padding: 5% 8.33%;
+}
+
+.faq-open {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.faq-close {
+  transform: rotate(180deg);
+  transition: all 0.4s;
+}
+
+.desc-open {
+  /* position: absolute;
+    top: 73px;
+    transition: all .5s; */
+  display: block;
+}
+
+.desc-close {
+  display: none;
+}
+
+.faq-header {
+  font-size: 36px;
+  line-height: 120%;
+  color: #3f4b52;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .muon-faq-desc p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .muon-faq-title p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .faq-header {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+}

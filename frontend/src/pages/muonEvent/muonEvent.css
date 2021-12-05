@@ -1,0 +1,271 @@
+.muon-happening {
+  padding: 0 8.33%;
+  width: 68%;
+}
+.muon-events {
+  padding-top: 80px;
+}
+
+.muon-happening h4 {
+  font-size: 36px;
+  line-height: 120%;
+  color: #3f4b52;
+}
+
+.muon-happening p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #3f4b52;
+}
+
+.muon-event-card {
+  width: 320px;
+  /* width: 100%; */
+  height: 363px;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  border-radius: 12px;
+}
+
+.muon-event-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 9.5%;
+  row-gap: 32px;
+  padding: 0 8.33%;
+  margin-bottom: 32px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.muon-even-thumb img {
+  width: 100%;
+  height: 123px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.muon-event-main-content {
+  font-size: 13px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.muon-event-more-txt {
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.muon-event-title {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #3f4b52;
+  margin-right: 8px;
+}
+
+.muon-title-label {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.muon-event-read {
+  font-size: 12px;
+  line-height: 150%;
+  border-bottom: 1px dashed #36d1dc;
+  text-decoration: none !important;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-event-search {
+  background: #ffffff;
+  border: 1.5px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 334px;
+  height: 50px;
+}
+
+.muon-event-search input {
+  flex-basis: 86%;
+  height: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0 8px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #3f4b52;
+}
+
+.muon-event-search input::placeholder {
+  color: #3f4b5270;
+}
+.muon-event-search input:focus {
+  outline: none;
+}
+.muon-event-search img {
+  flex-basis: 14%;
+  padding: 12px;
+}
+
+.muon-event-inputs {
+  padding: 50px 8.33%;
+  display: grid;
+  grid-template-areas: "search location event date available";
+  column-gap: 40px;
+}
+
+.muon-event-dropdown {
+  background: #ffffff;
+  border: 1.5px solid #efefef;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 175px;
+  height: 50px;
+}
+
+.muon-drop-title {
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  color: #c4c4c4;
+  text-align: left;
+}
+.muon-event-dropdown:focus {
+  outline: none;
+}
+.muon-event-drop-content {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  color: #3f4b52;
+}
+
+.muon-drop-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.muon-drop-date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.available {
+  grid-area: available;
+}
+
+.event {
+  grid-area: event;
+}
+
+.date {
+  grid-area: date;
+}
+
+.location {
+  grid-area: location;
+}
+
+.search {
+  grid-area: search;
+}
+
+@media (max-width: 1094px) {
+  .muon-event-inputs {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .muon-event-inputs {
+    grid-template-areas:
+      "search location event"
+      "date available available";
+    row-gap: 10px;
+  }
+  .muon-event-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .muon-happening {
+    width: 100%;
+  }
+
+  .muon-happening h4 {
+    font-size: 30px;
+  }
+
+  .muon-happening p {
+    font-size: 14px;
+  }
+
+  .muon-about-intro {
+    min-height: 322px !important;
+  }
+
+  .muon-event-grid {
+    display: flex;
+    align-items: center;
+    column-gap: 9.5%;
+    row-gap: 32px;
+    padding: 0 8.33%;
+    padding-bottom: 32px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .muon-event-grid > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .muon-event-inputs {
+    grid-template-areas: "search search location" "event date available";
+  }
+}
+
+@media (max-width: 500px) {
+  .muon-event-inputs {
+    grid-template-areas: "search search" "location event" "date available";
+  }
+
+  .muon-drop-title {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .muon-event-drop-content {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .muon-event-dropdown {
+    height: 36px;
+  }
+
+  .muon-event-search {
+    height: 36px;
+  }
+}

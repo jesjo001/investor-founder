@@ -1,0 +1,369 @@
+.muon-messenger-connects {
+  width: 100%;
+  max-width: 290px;
+  height: 50vh;
+  max-height: 560px;
+  overflow-y: auto;
+  background: #fcfdfd;
+  border-radius: 4px;
+}
+
+.messenger-dp {
+  width: 52px;
+  height: 52px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.messenger-dp img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.muon-messenger-layout {
+  display: grid;
+  grid-template-columns: minmax(290px, 1fr) 6fr;
+  padding: 20px 8.33%;
+  padding-top: 152px;
+  column-gap: 40px;
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.messenger-online {
+  background: linear-gradient(180deg, #02b033 0%, #08a534 100%);
+}
+
+.messenger-status {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid #02b033;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.muon-messenger-connects-title {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #181818;
+  padding: 25px 10.34%;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 16px;
+}
+
+.muon-messenger-connect {
+  border-bottom: 1px solid #f4f4f4;
+  height: 80px;
+}
+
+.muon-messenger-connect .main {
+  padding: 0 10.34%;
+  padding-left: calc(10.34% - 8px);
+}
+
+.muon-messenger-connect-txt .name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #181818;
+  font-weight: 500;
+}
+
+.muon-messenger-connect-txt .message {
+  font-size: 10px;
+  line-height: 150%;
+  color: rgba(24, 24, 24, 0.5);
+}
+
+.muon-message-box-header {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 15px 3.5%;
+}
+
+.muon-message-box-header p,
+.muon-message-box-header span {
+  font-size: 14px;
+  line-height: 150%;
+  color: #181818;
+}
+
+.muon-message-box-header span {
+  color: #6099e6;
+}
+
+.muon-message-box {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.muon-messenger-connect .active {
+  display: inline-block;
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 12px;
+  width: 8px;
+  height: 100%;
+}
+
+.messenger-time-stripe span {
+  display: inline-block;
+  flex-basis: 37%;
+  height: 1px;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+.messenger-time-stripe {
+  column-gap: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.messenger-time-stripe p {
+  font-size: 14px;
+  line-height: 150%;
+  color: #18181860;
+}
+
+.muon-message-space {
+  height: 50vh;
+  max-height: 500px;
+  padding: 18px 0;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  overflow: auto;
+}
+
+.muon-message-space::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.muon-message-space::-webkit-scrollbar-track {
+  background-color: rgba(236, 236, 236, 0.6);
+  border-radius: 12px;
+}
+
+.muon-message-space::-webkit-scrollbar-thumb {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 12px;
+}
+
+.muon-messenger-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border: none;
+  margin-left: 33px;
+}
+
+.muon-messenger-btn:focus {
+  outline: none;
+}
+
+.muon-messenger-input input {
+  flex-basis: 88%;
+  margin-right: 20px;
+  height: 100%;
+  border: none;
+}
+
+.muon-messenger-input input:focus {
+  outline: none;
+}
+
+.muon-messenger-input input::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(24, 24, 24, 0.2);
+}
+
+.muon-messenger-input {
+  padding: 0px 3.5%;
+  border-top: 1px solid #f4f4f4;
+  height: 78px;
+}
+
+.muon-search-connect {
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  height: 50px;
+  padding: 0 15px;
+  margin-bottom: 14px;
+}
+
+.muon-search-connect input {
+  border: none;
+  margin-left: 10px;
+  height: 100%;
+  flex-basis: 95%;
+  font-size: 14px;
+  line-height: 150%;
+  color: #18181860;
+}
+.muon-search-connect input::placeholder {
+  color: #18181860;
+}
+
+.muon-search-connect input:focus {
+  outline: none;
+}
+
+.muon-search-connect > section {
+  flex-basis: 5%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.muon-searched-messenger {
+  border-bottom: 1px solid #c6c6c6;
+  padding: 15px 0;
+  padding-right: 24px;
+  margin: 0 26px;
+  margin-bottom: 5px;
+}
+
+.muon-searched-messenger .name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #181818;
+  font-weight: 500;
+}
+
+.muon-searched-messenger .designation {
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(24, 24, 24, 0.5);
+}
+
+.muon-searched-messenger-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 15px;
+}
+
+.muon-search-check {
+  width: 24px;
+  height: 24px;
+}
+.muon-search-check span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muon-search-check input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 3;
+}
+
+.muon-search-check input:checked + span {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border: none;
+}
+
+.muon-start-chat-btn {
+  max-width: 290px;
+}
+
+.m-img {
+  transform: rotate(-90deg);
+}
+
+.n-img {
+  transform: rotate(90deg);
+}
+
+.muon-messenger-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.muon-mobile-title-messenger {
+  display: none;
+}
+
+.muon-side-connect {
+  background-color: transparent;
+}
+
+@media (max-width: 1059px) {
+  .muon-messenger-layout {
+    display: grid;
+    grid-template-columns: minmax(200px, 3fr) 5fr;
+    padding: 10px 8.33%;
+    padding-top: 100px;
+    column-gap: 20px;
+  }
+
+  .muon-message-box-header p,
+  .muon-message-box-header span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .muon-messenger-layout {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 705px) {
+  .muon-messenger-layout {
+    display: block;
+    padding-top: 120px;
+  }
+
+  .muon-side-connect {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 12px;
+    width: 100%;
+    transition: all 0.3s;
+    z-index: 3;
+  }
+
+  .muon-messenger-mobile {
+    display: flex;
+  }
+
+  .muon-message-box-header p,
+  .muon-message-box-header span {
+    display: none;
+  }
+
+  .muon-messenger-connects {
+    height: 55vh;
+  }
+
+  .muon-mobile-title-messenger {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,138 @@
+.muon-single-event {
+  padding: 123px 8.33%;
+}
+
+.muon-single-event p {
+  margin-bottom: 0;
+}
+
+.muon-event-banner {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  height: 436px;
+}
+
+.muon-venues {
+  column-gap: 10%;
+}
+.muon-event-venue img {
+  width: 100% !important;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.muon-event-venue {
+  flex-basis: 45%;
+}
+
+.muon-guest {
+  background: #ffffff;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  border-radius: 12px;
+  min-height: 197px;
+  width: 320px;
+  padding: 24px;
+}
+
+.muon-guest-img {
+  object-position: center;
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.muon-crumbs {
+  font-size: 18px;
+  line-height: 21px;
+  color: #3f4b52;
+}
+
+.active-crumb {
+  font-weight: 600;
+}
+
+.muon-single-event-header {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #3f4b52;
+  margin-top: 72px;
+  margin-bottom: 16px;
+}
+
+.muon-single-event-txt {
+  font-size: 18px;
+  line-height: 200%;
+  color: #3f4b52;
+  margin-bottom: 32px !important;
+}
+
+.muon-guest-name {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #3f4b52;
+  margin-left: 23px;
+}
+
+.muon-guest-desc {
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.muon-guest-list {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 100px;
+}
+
+.back-guest,
+.forward-guest {
+  position: absolute;
+  top: 15%;
+  cursor: pointer;
+}
+.forward-guest {
+  right: -50px;
+}
+
+.back-guest {
+  left: -50px;
+}
+
+.muon-partner-list{
+  column-gap: 72px;
+  overflow-x: auto;
+}
+
+.muon-partner-card {
+  width: 187px;
+  height: 131px;
+  background: #e1e1e1;
+  border-radius: 12px;
+}
+
+
+*::-webkit-scrollbar{
+  height: 2px;
+}
+
+
+
+@media (max-width: 767px) {
+  .muon-event-venue {
+    flex-basis: 100%;
+  }
+
+  .muon-venues {
+    row-gap: 32px;
+  }
+}

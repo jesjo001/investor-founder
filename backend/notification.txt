@@ -1,0 +1,26 @@
+#FRONT END SOCKET IMPLEMENTATION
+
+
+we will be checking for login session in realtime using websocket 
+
+
+the F.E socket emits data to the B.E socket ('event',sender,receiver)
+
+the B.E sockect gets thoes parameters and check if the reciever is online (found in the users array)
+if found, emits data to that receiver else emit data back to the sender.
+
+        if the data was emited to the receiver means the receiver is online, the F.E then sends an api post request to the B.END
+        with the following data (eventType,senderId)
+
+        on the B.E the api being sent to has a middleware that recieve the data, no need of checking if the user is online or not 
+        the receiver id becomes req.user.id, since his online.
+        you then create what you want insert data to the database and return the data as json.
+
+
+        else if the data was emited to the sender means the receiver is offline, the F.E then sends an api post request throught a differnt api link called offlineMAil(in my case)
+        with the following parameters(receiver,eventType).
+        the offline mail also has a middleware that recieve the data, no need of checking for isActive becuse it has already been done on the F.END
+        you then write what you want and use req.user.id for the sender ID becuse the sender is active and the reciever is not, insert the data to the database and send it through the mail function to the user mail address.
+        and return data.
+
+        the rest will be handled by the frontend guys.

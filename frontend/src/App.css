@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Averta;
+  src: url("./assets/fonts/AvertaDemoPE-Regular.otf");
+}
+
+@font-face {
+  font-family: Averta-Bold;
+  src: url("./assets/fonts/AvertaDemoPE-ExtraboldItalic.otf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("./assets/fonts/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("./assets/fonts/Gilroy-ExtraBold.otf");
+}
+
+body {
+  background: #fcfcfc;
+}
+
+* {
+  font-size: 16px;
+  font-family: Averta;
+}
+
+small {
+  line-height: 11pt !important;
+  font-size: 11px !important;
+}
+
+.muon-title,
+.muon-subtitle {
+  color: #3f4b52;
+  margin: 0;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 55px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.muon-title {
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-subtitle {
+  font-weight: normal !important;
+}
+
+.muon-banner-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #3f4b52;
+}
+.white{
+  color: white;
+}
+.muon-banner-main-content {
+  width: 75%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(236, 236, 236, 0.6);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+  .muon-banner-main-content {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .muon-title,
+  .muon-subtitle {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 733px) {
+  .muon-title,
+  .muon-subtitle {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 611px) {
+  .muon-title,
+  .muon-subtitle {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+/* @media(max-width: 1200px){
+  *{
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width: 992px){
+  *{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 768px){
+  *{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 500px){
+  *{
+    font-size: 8px;
+  }
+}
+
+@media(max-width: 425px){
+  *{
+    font-size: 6px;
+  }
+} */

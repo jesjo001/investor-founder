@@ -1,0 +1,49 @@
+.muon-terms-condition {
+  padding: 0 8.33%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.muon-terms-condition h2 {
+  font-size: 56px;
+  line-height: 120%;
+  color: #39363d;
+  margin-top: 120px;
+  margin-bottom: 72px;
+}
+
+.muon-condition-item {
+  margin-bottom: 30px;
+}
+
+.muon-condition-item h4 {
+  font-size: 24px;
+  line-height: 150%;
+  color: #39363d;
+}
+
+.muon-condition-item p, .muon-policy-list li {
+  font-size: 16px;
+  color: #39363d;
+  line-height: 120%;
+}
+
+@media (max-width: 768px) {
+  .muon-condition-item h4 {
+    font-size: 18px;
+  }
+  .muon-condition-item p, .muon-policy-list li {
+    font-size: 14px;
+  }
+
+  .muon-terms-condition h2 {
+    font-size: 36px;
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
+
+  .muon-terms-condition {
+    padding-bottom: 72px;
+  }
+}

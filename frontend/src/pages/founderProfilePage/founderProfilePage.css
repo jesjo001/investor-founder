@@ -1,0 +1,135 @@
+
+.muon-profile-pg{
+    padding: calc(80px + 72px) 8.33%;
+}
+
+.muon-profile-dp{
+    max-width: 488px;
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.muon-profile-name{
+    font-size: 36px;
+line-height: 120%;
+color:#FFFFFF;
+}
+
+
+.muon-profile-title{
+    font-size: 18px;
+line-height: 120%;
+color: #FFFFFF;
+/* margin-bottom: 50px; */
+}
+
+.muon-profile-content{
+    font-size: 18px;
+line-height: 200%;
+color: #3F4B52;
+}
+
+.muon-profile-about-startup{
+    font-size: 30px;
+line-height: 35px;
+color: #3F4B52;
+margin-bottom: 18px;
+}
+
+.muon-profile-about-txt{
+    font-size: 18px;
+line-height: 150%;
+color: #3F4B52;
+margin-top: 18px;
+}
+
+.muon-profile-subtitle{
+    font-size: 24px;
+    font-weight: normal;
+line-height: 150%;
+color: #39363D;
+}
+
+
+.user-profile-founders{
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.muon-profile-co_founders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 32px;
+    flex-wrap: wrap;
+}
+
+.muon-profile-co_founders > section{
+    flex-basis: 30%;
+}
+
+.co_founder-name-p{
+    font-size: 14px;
+line-height: 120%;
+color: #39363D;
+margin-bottom: 8px;
+}
+
+.co_founder-desc{
+    font-size: 12px;
+line-height: 120%;
+color: #4C586250;
+}
+
+
+@media (max-width: 768px) {
+    .muon-profile-co_founders > section{
+        flex-basis: 100%;
+    }
+
+    .muon-profile-name {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .muon-profile-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .muon-profile-content {
+        font-size: 14px;
+    }
+    .muon-profile-about-startup {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+
+    .muon-profile-about-txt {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .muon-profile-subtitle {
+        font-size: 18px;
+    }
+
+    .muon-profile-dp {
+        height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .muon-profile-dp {
+        height: 250px;
+        object-fit: contain;
+    }
+}

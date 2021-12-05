@@ -1,0 +1,106 @@
+.muon-input {
+  display: block;
+  width: 100%;
+  max-width: 472px;
+  height: 56px;
+  border: 1px solid rgba(17, 17, 17, 0.32);
+  border-radius: 8px;
+  padding: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* margin-bottom: 16px; */
+  color: #39363d;
+}
+
+.muon-input:focus {
+  outline-color: #5b86e5;
+}
+
+.muon-input-error:focus {
+  outline-color: red;
+}
+
+.muon-input::placeholder,
+.muon-password::placeholder {
+  color: rgba(17, 17, 17, 0.32);
+}
+
+.muon-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #39363d;
+  margin-bottom: 8px;
+}
+
+.muon-switch-auth {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #39363d;
+  margin-top: 16px;
+}
+
+.muon-pitch-file input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.muon-pitch-file img {
+  position: absolute;
+  right: 16px;
+  z-index: -1;
+}
+
+.muon-pitch-file p {
+  position: absolute;
+  left: 16px;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: rgba(17, 17, 17, 0.32) !important;
+}
+
+.muon-input-wrap {
+  margin-bottom: 1rem;
+}
+
+.muon-password {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font: inherit;
+}
+
+.muon-password:focus {
+  outline: none;
+}
+
+@media (max-width: 973px) {
+  .muon-input {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 16px 6px;
+    height: 36px;
+  }
+  .muon-password {
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 6px 16px;
+  }
+
+  .muon-label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,117 @@
+.muon-footer {
+  background: #0b0d17;
+  padding: 96px 9%;
+}
+
+.muon-footer-container {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr 1fr;
+  column-gap: 30px;
+}
+
+.muon-footer-list-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.muon-footer-list li,
+.muon-footer-list li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #eeeff4;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.muon-title-footer {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 32px;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-footer-about {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.muon-footer-aboutApp {
+  color: #eeeff4;
+  margin-bottom: 32px;
+}
+
+.muon-footer-aboutCompany {
+  color: #d9dbe1;
+}
+
+@media (max-width: 695px) {
+  .muon-footer {
+    padding-bottom: 68px;
+  }
+
+  .muon-title-footer {
+    display: none;
+  }
+
+  .muon-footer-aboutApp {
+    margin-bottom: 16px;
+  }
+
+  .muon-footer-aboutCompany {
+    margin-bottom: 32px;
+    font-size: 12px !important;
+  }
+  .muon-footer-main {
+    grid-area: main;
+    text-align: center;
+  }
+
+  .muon-footer-company {
+    grid-area: company;
+    text-align: center;
+  }
+
+  .muon-footer-contact {
+    grid-area: contact;
+    text-align: center;
+  }
+
+  .muon-footer-more {
+    grid-area: more;
+    text-align: center;
+  }
+  .muon-footer-container {
+    display: grid;
+    grid-template-areas:
+      "main main main main"
+      "company company contact contact"
+      "more more more more";
+    column-gap: 30px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin: 20px 0;
+    column-gap: 20px !important;
+  }
+}

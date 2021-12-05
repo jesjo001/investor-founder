@@ -1,0 +1,46 @@
+.muon-invite-card {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  height: 120px;
+  width: 100%;
+  max-width: 422px;
+  padding: 22px 22px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+}
+
+.muon-invite-card p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.muon-invite-card section:first-child {
+  flex-basis: 60%;
+}
+
+.muon-invite-card section:last-child {
+  flex-basis: 40%;
+}
+
+.invite-vector {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 50%;
+}
+
+@media (max-width: 408px) {
+  .hide_vec {
+    display: none;
+  }
+
+  .muon-invite-card p {
+    margin-bottom: 6px;
+  }
+}

@@ -1,0 +1,7 @@
+.muon-founder-become-bg {
+    background: url("../../assets/images/founderBecomeBg.svg"),
+      linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

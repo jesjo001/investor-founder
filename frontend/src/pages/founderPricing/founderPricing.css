@@ -1,0 +1,28 @@
+.muon-price-header p{
+  font-size: 32px;
+  line-height: 120%;
+  color: #3f4b52;
+}
+
+.muon-price-header{
+    margin-top: 70px;
+}
+
+.muon-price-header img{
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .muon-price-header p{
+        font-size: 24px;
+    }
+
+    .muon-price-header{
+        margin-top: 50px;
+    }
+
+    .muon-price-header img{
+        margin-bottom: 16px;
+    }
+}

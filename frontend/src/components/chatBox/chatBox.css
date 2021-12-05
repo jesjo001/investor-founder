@@ -1,0 +1,220 @@
+.muon-chat-tab {
+  position: fixed;
+  right: calc(414px + 40px);
+  width: 414px;
+  max-width: 100%;
+}
+
+.muon-sent-message {
+  background: linear-gradient(
+    90.13deg,
+    rgba(54, 209, 220, 0.2) 0%,
+    rgba(91, 134, 229, 0.2) 99.77%
+  );
+  border-radius: 8px 8px 0px 8px;
+  padding: 9px 21px;
+  font-size: 9.56954px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  color: #39363d;
+  max-width: 330px;
+  margin-bottom: 6px;
+}
+
+.muon-message-time {
+  font-size: 10px;
+  line-height: 12px;
+  color: #333333;
+  margin-left: 4px;
+}
+
+.muon-chat-message {
+  padding: 35px 32px;
+  height: calc(333px - 70px);
+  overflow-y: auto;
+}
+
+.muon-receive-message {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 8px 8px 8px 0px;
+  padding: 9px 21px;
+  font-size: 9.56954px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  max-width: 330px;
+  margin-bottom: 6px;
+}
+
+.muon-sender-dp {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 8px;
+}
+
+.muon-chat-bubble {
+  margin-bottom: 20px;
+}
+
+.muon-chat-inputs {
+  background-color: #f3f3f3;
+  height: 42px;
+  width: 100%;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 0 16px;
+  column-gap: 8px;
+}
+
+.muon-chat-inputs input {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  line-height: 120%;
+  color: #4c5862;
+  height: 100%;
+}
+
+.muon-chat-inputs input:focus {
+  outline: none;
+}
+
+.muon-chat-inputs input::placeholder {
+  opacity: 0.5;
+}
+
+.muon-chat-input-bubble {
+  width: 100%;
+  padding: 16px;
+  padding-top: 0;
+}
+
+.chat-send-btn {
+  border-radius: 8px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-back {
+  margin-right: 19px;
+}
+
+.muon-add-founder {
+  width: 100%;
+  height: 333px;
+  position: absolute;
+  z-index: 100;
+  top: 56px;
+}
+
+.muon-add-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: inherit;
+  width: 100%;
+}
+
+.muon-add-main {
+  width: 100%;
+  height: 248px;
+  background: white;
+  border-radius: 12px 12px 0px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.muon-add-header {
+  padding: 15px 24px;
+  border-bottom: 1px solid #efefef;
+}
+
+.muon-add-header .title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.muon-add-header .close {
+  font-size: 18px;
+}
+
+.muon-add-header .add {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.muon-add-founders-radio {
+  background: linear-gradient(
+    90.13deg,
+    rgba(54, 209, 220, 0.12) 0%,
+    rgba(91, 134, 229, 0.12) 99.77%
+  );
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muon-added-founders-radio {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muon-add-founders-radio img,
+.muon-added-founders-radio img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 6px;
+}
+
+.muon-founder-to-add {
+  padding: 16px 32px;
+  border-bottom: 1px solid #efefef;
+}
+
+.muon-founder-to-add .image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+}
+
+.muon-co-founders-add {
+  height: 194px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.muon-co-founders-add::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.muon-co-founders-add::-webkit-scrollbar-thumb {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 12px;
+}
+
+.muon-co-founders-add::-webkit-scrollbar-track {
+  background-color: rgba(236, 236, 236, 0.6);
+  border-radius: 12px;
+}

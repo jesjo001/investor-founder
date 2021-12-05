@@ -1,0 +1,112 @@
+.muon-connections {
+}
+
+.muon-no-connect {
+  text-align: center;
+  width: 100%;
+  max-width: 654px;
+  margin-top: 48px;
+}
+
+.muon-no-connect > img {
+  width: 100%;
+  max-width: 256.35px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.muon-no-connect h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.muon-no-connect p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #4c5862;
+}
+
+.muon-connect h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #4c5862;
+  margin: 32px 0;
+}
+
+.muon-connect {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.muon-connected-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.connect-online {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  color: #7ed321;
+}
+
+.connect-offline {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  color: #7ed321;
+}
+
+.status-indicator-online {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #7ed321;
+  margin-right: 4px;
+}
+
+.connect-status {
+  margin: 8px 0;
+}
+
+.muon-connected {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 45px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.invite_vec {
+  margin-top: -200px;
+}
+
+@media (max-width: 571px) {
+  .muon-connected {
+    margin-right: 0px;
+  }
+
+  .muon-result-desc {
+    width: 60% !important;
+    word-break: break-all;
+  }
+
+  .muon-connected-img {
+    width: 38px;
+    height: 38px;
+    margin-right: 6px;
+  }
+}

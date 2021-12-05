@@ -1,0 +1,214 @@
+.muon-become {
+  /* max-height: 120vh;
+  min-height: 100vh; */
+  min-height: 100vh;
+  height: fit-content;
+  padding-top: 80px;
+}
+
+.muon-become-bg {
+  background: url("../../assets/images/becomeBg.svg"),
+    linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.muon-become-txt {
+  padding: 30px;
+}
+
+.muon-become-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.muon-become-subheader {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.muon-become-steps {
+  width: 100%;
+  max-width: 472px;
+  margin-top: 100px;
+  padding: 0px 28px 0 32px;
+}
+
+.muon-become-steps h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 150%;
+  color: #39363d;
+}
+
+.muon-become-steps p,
+.muon-become-steps b {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #39363d;
+}
+
+.muon-become-steps b {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+.muon-step-skip {
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.step-label {
+  margin-bottom: 16px;
+}
+
+.muon-progress-wrap {
+  margin: 28px 0;
+}
+
+.muon-step-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #39363d;
+  margin-bottom: 24px;
+}
+
+.muon-checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background: rgba(82, 110, 255, 0.12) !important;
+  border: 2px solid rgba(82, 110, 255, 0.24);
+}
+
+.muon-checkbox-group {
+  margin-bottom: 56px;
+  column-gap: 4px;
+}
+
+.muon-drop-wrap {
+  margin-bottom: 140px;
+}
+
+.muon-photo-upload {
+  background-color: white;
+  width: 100%;
+  max-width: 472px;
+  height: 158px;
+  border: 1px solid rgba(57, 54, 61, 0.64);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muon-photo-upload input {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.muon-photo-upload img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 1107px) {
+  .muon-become-txt {
+    padding-top: 72px;
+    padding-left: 50px;
+  }
+
+  .muon-become-steps {
+    margin-top: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .muon-become {
+    height: fit-content;
+  }
+
+  .muon-become-bg,
+  .muon-founder-become-bg,
+  .muon-refer-founder-bg,
+  .muon-register-bg,
+  .muon-founder-become-bg2 {
+    height: 600px;
+    display: none;
+  }
+
+  .muon-become-txt {
+    padding-top: 72px;
+    padding-left: 32px;
+  }
+
+  .muon-become-steps {
+    margin-top: 92px;
+  }
+}
+
+@media (max-width: 500px) {
+  .muon-become-bg,
+  .muon-founder-become-bg,
+  .muon-founder-become-bg2,
+  .muon-refer-founder-bg,
+  .muon-register-bg {
+    height: 533px;
+  }
+
+  .muon-become-header {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .muon-become-subheader {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .muon-become-steps h3 {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .muon-become-steps p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .muon-become-steps b {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .muon-checkbox {
+    width: 16px;
+    height: 16px;
+  }
+}

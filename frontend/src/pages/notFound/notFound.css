@@ -1,0 +1,27 @@
+.muon-not-found {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.muon-not-found-content h1 {
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-not-found-content p {
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #5b86e5;
+  transition: 0.3s all;
+}
+
+.muon-not-found-content p:hover {
+  color: #36d1dc;
+  transform: scale(1.09, 1.09);
+  transition: 0.3s all;
+}

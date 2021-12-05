@@ -1,0 +1,52 @@
+.muon-investor-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 195px));
+  grid-template-areas:
+    "one two"
+    "three three"
+    "four four";
+  gap: 32px;
+}
+
+/* .muon-info-card:nth-child(1){
+    grid-area: one;
+}
+
+.muon-info-card:nth-child(2){
+    grid-area: two;
+}
+
+.muon-info-card:nth-child(3){
+    grid-area: three;
+} */
+
+.muon-investor-card {
+  background: #fff;
+  height: 211px;
+  width: 100%;
+  object-position: left;
+  object-fit: cover;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+  padding: 0 65px;
+}
+
+.muon-investor-card h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  font-feature-settings: "liga" off;
+  color: #39363d;
+}
+
+@media (max-width: 768px) {
+  .muon-investor-cards {
+    justify-content: center;
+  }
+}

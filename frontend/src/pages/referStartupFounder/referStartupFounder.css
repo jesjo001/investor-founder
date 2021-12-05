@@ -1,0 +1,44 @@
+.muon-refer-founder-bg{
+    background:  url("../../assets/images/referCloud.svg"),
+    linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+.muon-refer-form-header{
+    margin-bottom: 32px;
+}
+
+.muon-refer-rocket{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.muon-refer-rocket-sm{
+    display: none;
+}
+
+@media (max-width: 1234px) {
+    .muon-refer-rocket{
+        display: none;
+    }
+
+    .muon-refer-rocket-sm{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+}
+
+
+@media (max-width: 851px) {
+    
+    .muon-refer-br{
+        display: none;
+    }
+}

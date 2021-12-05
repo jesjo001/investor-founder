@@ -1,0 +1,281 @@
+/* .muon-flex {
+  flex-wrap: wrap;
+} */
+
+.muon-plan {
+  padding: 72px 8.33%;
+}
+
+.muon-plan-card {
+  width: 350px;
+  border-radius: 12px;
+  padding: 32px 0;
+}
+
+.white-card {
+  height: 327px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.value-card {
+  position: relative;
+  height: 351px;
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+}
+
+.muon-plan-duration,
+.muon-value-duration {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3f4b52;
+  margin-bottom: 54px;
+}
+
+.muon-plan-rate {
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.muon-value-rate {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.muon-value-duration {
+  color: white !important;
+  margin-bottom: 33px !important;
+  margin-top: 29px;
+}
+
+.muon-plan-value,
+.muon-value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #3f4b52;
+}
+
+.muon-value {
+  color: white;
+}
+
+.muon-choose-btn {
+  border: none;
+  padding: 0px 60px;
+  background: linear-gradient(
+    90.13deg,
+    rgba(54, 209, 220, 0.1) 0%,
+    rgba(91, 134, 229, 0.1) 99.77%
+  );
+  border-radius: 32px;
+}
+
+.muon-choose-btn:focus {
+  outline: none;
+}
+
+.value-card .muon-choose-btn {
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+.muon-choose-btn p {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 150%;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.value-added {
+  background: #ffffff;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 4px 24px;
+  position: absolute;
+  top: -20px;
+}
+
+.value-added div {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.muon-plan-grid {
+  display: flex;
+  column-gap: 36px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 88px;
+  row-gap: 28.6px;
+}
+
+.muon-member-sec {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  min-height: 326px;
+  padding: 72px 8.33%;
+}
+
+.muon-member-sec .muon-choose-btn {
+  background: white;
+  margin-bottom: 16px;
+}
+
+.muon-membership h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.muon-membership p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.muon-membership {
+  width: 75%;
+}
+
+.muon-refer-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.muon-refer-space {
+  justify-content: flex-end;
+}
+
+.banner-images {
+  background-color: green;
+}
+
+.muon-header {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 582px 1fr; */
+  position: relative;
+  height: 100vh;
+}
+
+.muon-founder-refer-instruction {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #3f4b52;
+  margin-top: 32px;
+}
+
+@media (max-width: 1024px) {
+  .muon-plan-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 909px) {
+  .muon-flex {
+    flex-wrap: nowrap;
+  }
+  .muon-plan-grid {
+    justify-content: center;
+  }
+
+  .muon-membership {
+    width: 100%;
+  }
+
+  .muon-membership h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .muon-membership p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .muon-choose-btn p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 767px) {
+  .muon-founder-banner {
+    height: 150vh !important;
+  }
+  .muon-refer-space {
+    justify-content: center;
+  }
+
+  .muon-member-sec .muon-choose-btn {
+    margin-top: 16px;
+  }
+
+  .muon-plan-duration,
+  .muon-value-duration {
+    font-size: 12.5957px;
+    line-height: 16px;
+  }
+
+  .muon-plan-rate,
+  .muon-value-rate {
+    font-size: 25.1915px;
+    line-height: 31px;
+  }
+
+  .muon-plan-value,
+  .muon-value {
+    font-size: 11.0213px;
+    line-height: 170%;
+  }
+  .muon-founder-refer-instruction {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .muon-founder-banner {
+    height: 121vh !important;
+  }
+}

@@ -1,0 +1,85 @@
+.muon-profile-header {
+  background: url("../../assets/images/profileHeader.svg"),
+    linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  height: 361px;
+  padding: 0px 8.33%;
+  display: flex;
+  align-items: center;
+}
+
+.muon-profile-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.muon-profile-image {
+  position: relative;
+  margin-top: 33px;
+}
+.muon-profile-image .dp {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.muon-profile-image .edit {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.muon-profile-image .edit input {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.muon-profile-form {
+  padding: 72px 8.33%;
+}
+
+.muon-profile-form > div > section {
+  margin-bottom: 16px;
+}
+
+.muon-edit-profile .muon-step-header {
+  margin-bottom: 8px !important;
+}
+
+.muon-edit-profile .muon-dropdown {
+  max-width: 472px !important;
+}
+
+.muon-edit-profile .muon-drop-wrap {
+  margin-bottom: 16px !important;
+}
+
+.cancel-edit {
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+.p_wait {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}

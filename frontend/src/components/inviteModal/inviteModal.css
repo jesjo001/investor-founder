@@ -1,0 +1,44 @@
+.invite-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #3f4b52;
+}
+
+.muon-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../assets/images/chevron_left.svg");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 45%;
+  padding-right: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .muon-select {
+    padding: 5px !important;
+  }
+}
+
+@media (max-height: 840px) {
+  .invite_vec {
+    width: 300px;
+  }
+
+  .center_vec {
+    text-align: center;
+  }
+}
+
+@media (max-height: 763px) {
+  .invite_vec {
+    display: none;
+  }
+
+  .center_vec {
+    text-align: center;
+  }
+}

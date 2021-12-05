@@ -1,0 +1,52 @@
+.muon-cookie-card {
+  width: 90%;
+  min-height: 160px;
+  border-radius: 12px;
+  background: #ffffff;
+  position: fixed;
+  bottom: 15px;
+  margin: 0 5% !important;
+  z-index: 20;
+  padding: 14px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cookie-first-section {
+  flex-basis: 80%;
+  border-right: 1px solid #c4c4c4;
+}
+
+.cookie-second-section {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.muon-close-cookie {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .muon-cookie-card h4 {
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .muon-cookie-card p {
+    font-size: 14px;
+    line-height: 105%;
+  }
+
+  .cookie-first-section {
+    flex-basis: 100%;
+    border-right: none;
+  }
+
+  .cookie-second-section {
+    flex-basis: 100%;
+    padding: 10px 0;
+  }
+}

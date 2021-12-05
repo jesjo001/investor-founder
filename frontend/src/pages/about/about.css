@@ -1,0 +1,152 @@
+.muon-about-title {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 55px;
+  line-height: 120%;
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.muon-about-intro {
+  min-height: 531px;
+  height: fit-content;
+  background-color: white;
+}
+
+.muon-about-content {
+  height: inherit;
+  min-height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 69px;
+  padding: 0 8.33%;
+}
+
+.muon-about-content > section {
+  height: inherit;
+  min-height: inherit;
+}
+
+.muon-about-content p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #3f4b52;
+}
+
+.muon-about {
+  padding-top: 80px;
+}
+
+.muon-about-vec {
+  max-width: 590px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.muon-more-about {
+  height: fit-content;
+  min-height: 460px;
+}
+
+.muon-more-title {
+  font-size: 36px;
+  line-height: 120%;
+  color: #3f4b52;
+}
+
+.muon-about-more-img {
+  width: 100%;
+  max-width: 547px;
+  object-position: center;
+  object-fit: center;
+}
+
+.muon-more-sub {
+  font-size: 32px;
+  line-height: 120%;
+  color: #3f4b52;
+  margin-top: 5px;
+  margin-bottom: 23px;
+  width: 75%;
+}
+
+.muon-carousel-img {
+  margin-top: 75px;
+}
+
+.muon-phil-list li {
+  font-size: 16px;
+  line-height: 150%;
+  color: #3f4b52;
+  margin-bottom: 16px !important;
+}
+
+.muon-carousel-indicator{
+  background: #C4C4C4 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.muon-slider .active{
+  background: #5B86E5 !important;
+}
+
+@media (max-width: 1024px) {
+  .muon-phil-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .muon-about-title {
+    font-size: 36px;
+  }
+  .muon-about-content p {
+    font-size: 14px;
+    line-height: 150%;
+    color: #3f4b52;
+    margin-bottom: 18px;
+  }
+  .muon-more-sub {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .muon-about-content {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .muon-more-title {
+    font-size: 24px;
+    line-height: 120%;
+    color: #39363d;
+  }
+}
+
+@media (max-width: 710px) {
+  .muon-about-content {
+    grid-template-columns: 1fr;
+    min-height: 300px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .muon-about {
+    padding-bottom: 80px;
+  }
+
+  .muon-more-sub {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+
+  .muon-carousel-img {
+    margin-top: 0;
+  }
+}

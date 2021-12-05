@@ -1,0 +1,35 @@
+.muon-btn {
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 57px;
+  border: none;
+  padding: 12px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.muon-btn:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s;
+}
+
+.muon-btn:focus {
+  outline: none;
+}
+
+.muon-btn:active {
+  transform: scale(0.97, 0.97);
+  transition: all 0.3s ease-in-out;
+}
+
+.muon-btn:disabled {
+  background: lightgray;
+}
+
+.muon-btn-danger {
+  background: #ea5143;
+  border-radius: 37px;
+}

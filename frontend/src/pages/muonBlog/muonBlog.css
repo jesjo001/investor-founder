@@ -1,0 +1,161 @@
+.muon-blog {
+  padding: 172px 8.33%;
+}
+
+.muon-blog-img {
+  width: 100%;
+  max-width: 710px;
+  height: 312px;
+  border-radius: 12px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.muon-new-post-tag {
+  display: inline-block;
+  background: linear-gradient(90.13deg, #36d1dc 0%, #5b86e5 99.77%);
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 9px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.muon-new-post-header {
+  font-family: Gilroy-Medium;
+  font-size: 52px;
+  line-height: 61px;
+  color: #121212;
+}
+
+.muon-new-post-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 2%;
+  margin-bottom: 8%;
+}
+
+.muon-new-post-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: #121212;
+  opacity: 0.7;
+}
+
+.muon-new-post-read-time {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  color: #004aff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.read-time-dash {
+  display: inline-block;
+  height: 2px;
+  width: 15px;
+  background: #dedede;
+  margin-right: 8px;
+}
+
+.blog-list-title {
+  font-family: Gilroy-Medium;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #0f1935;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(270px, 370px));
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.hidden-tag {
+  display: none;
+}
+
+.visible-tag {
+  display: inline-block;
+}
+
+@media (min-width: 1595px) {
+  .muon-new-post-grid {
+    display: flex;
+    column-gap: 2%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(270px, 370px));
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 983px) {
+  .muon-new-post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2%;
+    margin-bottom: 8%;
+  }
+
+  .hidden-tag {
+    display: block;
+    width: fit-content;
+  }
+
+  .visible-tag {
+    display: none;
+  }
+
+  .muon-blog-img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 688px) {
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(270px, 370px));
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .muon-new-post-header {
+    font-family: Gilroy-Medium;
+    font-size: 42px;
+    line-height: 51px;
+    color: #121212;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-post {
+    flex-wrap: wrap;
+  }
+
+  .wrapped-about {
+    flex-basis: 100%;
+    margin-top: 16px;
+  }
+}
